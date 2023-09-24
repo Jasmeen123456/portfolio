@@ -1,83 +1,259 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" type="image" href="ox.png">
-    <title>biggboss</title>
-    <link rel="stylesheet" href="style.css">
-    
-                        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmeen-portfolio</title>
+    <link rel="icon" type="image" href="jasmeen.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+       body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'poppins',sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(20, 20, 59);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: orange;
+        font-size:1.2rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0;
+      }
+     
+      .firstsection >div{
+        width:30%;
+      }
+      .leftsection{
+        margin: 30px;
+        font-size: 3rem;
+      }
+      .rightsection img{
+        width: 400px;
+        border: 3px solid #ccc;
+        border-radius: 50%;
 
-</head>
-<body>
-    
-    <div class="main">
-        <div class ="navbar">
-            <div class="icon">
-                <h2 class ="logo">BiggBoss</h2>
-            </div>    
-            <div class="menu">
+      }
+      .pink{
+        color: rgb(221, 148, 241);
+      }
+      #element{
+        color: rgb(202, 137, 224);
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height:80vh;
+      }
+      .secondsection .box{
+        background: white;
+        width:77vw;
+        height:2px;
+        margin:56px 0;
+        display: flex;
+      }
+      .secondsection .vertical{
+        height:93px;
+        width:1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+      main hr{
+        border: 0;
+        background: blue;
+        height:1.2px;
+        margin:60px 84px;
+      }
+      .text-gary{
+        color: grey;
+      }
+      .image-top{
+        width:50px;
+        position: relative;
+        top:-50px;
+        left:-20px;
+      }
+      .vertical-title{
+        position: relative;
+        top: 50px;
+        width:200px;
+      }
+      .vertical-disc{
+        position: relative;
+        top:90px;
+        color: pink;
+        width: 200px;
+        font-size: 10px;
+
+      }
+      footer{
+        background-color:rgb(102, 77, 158);
+        height:140px;
+      }
+      .footer{
+        display:flex;
+        padding:23px 122px;
+        justify-content: space-evenly;
+
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer>div{
+        width:223px;
+      }
+     footer .footer-rights{
+      text-align: center;
+      padding:12px 0;
+
+     }
+     footer .footer-second ul a{
+      color: pink;
+      font-size: 15px;
+      padding:12px 0;
+     }
+     footer .footer-second ul a:hover{
+      color:orange;
+      font-size: 1.2rem;
+
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="left">Jasmeen's portfolio</div>
+            <div class="right">
                 <ul>
-                    <li><a href="https://www.jiocinema.com/tv-shows/bigg-boss-ott/3499624">HOME</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Bigg_Boss_(Hindi_season_16)">ABOUT</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Bigg_Boss">SERVICE</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Bigg_Boss">DESIGN</a></li>
-                    <li><a href="tel:+9991719097">CONTACT</a></li>
-                   
+                    <li><a href="portfolio.html">home</a></li>
+                    <li><a href="*">about</a></li>
+                    <li><a href="/">services</a></li>
+                    <li><a href="link/index.html">project</a></li>
+                    <li><a href="9991719097">contact me</a></li>
                 </ul>
             </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi my name is <span class="pink">Jasmeen</span>
+                <div>and i am a student.</div>
+                <span id="element"></span>
+            </div>
+            <div class ="rightsection"><img src="jasmeen.jpg"></div>
+        </section>
+        <hr>
+        <section class="secondsection">
+          <span class="text-gray">what i have done so far</span>
+          <h1>Past Experience</h1>
+          <div class="box">
+            <div class="vertical">
+              <img  class="image-top" src="html.jpg" alt="">
+              <div class ="vertical-title">
+                HTML DEVELOPER (2023-2023)
+              </div>
+              <div class="vertical-disc">
+                HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit.<br> It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements,<br> which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way.<br> The enclosing tags can make content into a hyperlink to connect to another page,<br> italicize words, and so on
+              </div>
+            </div>
+            <div class="vertical">
+              <img  class="image-top" src="css.jpg" alt="">
+              <div class ="vertical-title">
+                CSS DEVELOPER (2023-2023)
+              </div>
+              <div class="vertical-disc">
+                CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+              </div>
+            </div>
+            <div class="vertical">
+              <img  class="image-top" src="java.jpg" alt="">
+              <div class ="vertical-title">
+                JAVA DEVELOPER (2023-2023)
+              </div>
+              <div class="vertical-disc">
+                Java is a programming language developers use for mobile, software, and web development. A small team called ‘The Green Team’ initially conceptualized Java in the early 1990s. That team included James Gosling, who later became known as the ‘Father of Java’ for his work. Gosling developed Java while working as an engineer at Sun Microsystems (a subsidiary of Oracle today).
+              </div>
+            </div>
+            <div class="vertical">
+              <img  class="image-top" src="c.jpg" alt="">
+              <div class ="vertical-title">
+                C++ DEVELOPER (2023-2023)
+              </div>
+              <div class="vertical-disc">
+                Before the initial standardization in 1998, C++ was developed by Stroustrup at Bell Labs since 1979 as an extension of the C language; he wanted an efficient and flexible language similar to C that also provided high-level features for program organization.
+              </div>
+            </div>
+            <div class="vertical">
+              <img  class="image-top" src="r.jpg" alt="">
+              <div class ="vertical-title">
+                R DEVELOPER (2023-2023)
+              </div>
+              <div class="vertical-disc">
+                R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3> Jasmeen's portfolio</h3>
         </div>
-            <div class="search">
-                <input class="srch" type="search" name ="" placeholder="Type to Text">
-                <a href="#"><button class="btn">search</button></a>
-            </div>
-            <div class="content">
-                <h1><br> <span>BIGGBOSS</span></h1>
-                
-                <p class ="par">is a popular reality television show that originated in the Netherlands
-                    and has been adapted in various countries, including India.<br> The Indian version of Bigg Boss follows the
-                    format of a competitive reality show where a group of celebrity contestants live together in a specially
-                    constructed
-                    house for a fixed duration of time, usually around three months.<br>
-                </p>
-                     <button class="cn"><a href="https://www.jiocinema.com/tv-shows/bigg-boss-ott/3499624">WATCH</a></button><br><br>
-                     <img src="biggboss.jpg" height="250px" width="450" >
-                    
-                     
-                     <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=MbflmEyMamg#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
-                        
-                     
-                    <div class="form">  
-                      <form onlogin="callvalue()">
-                        
-                        <h2>Sign-up with Email and Password</h2>
-                        <input type="firstname" name="firstname" placeholder="Enter your firstname" id= "fname">
-                        <input type ="lastname"name="lastname" placeholder="Enter yourLastname" id ="lname">
-                        <input type="email" name="email" placeholder="Enter Email Here" id ="email">
-                        <input type ="password" name=""placeholder="Enter Password Here" id="password">
-                        <button class="btnn"><a href="#">login</button>     
-                        <button class="reset">Reset</button><br>
-                        
-                        <button class ="AdminLogin"><a href ="admin.html">Admin Login</button>
-                        <button class ="ForgotPassword"><a href ="forg.html">Forgot Password</button>
-                            <button class ="Register"><a href ="register.html">Register</button>
-                       
-                        <p class="liw">login in with</p>
-                        <div class="icons">
-                            <a href="https://www.facebook.com/groups/1800603763537236/"><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a href="https://www.instagram.com/p/CvRvRalOFJm/"><ion-icon name="logo-instagram"></ion-icon></a>
-                            <a href="https://twitter.com/JioCinema/status/1668542304993280000"><ion-icon name="logo-twitter"></ion-icon></a>
-                            <a href="https://play.google.com/store/apps/details?id=com.jio.media.ondemand&pli=1"><ion-icon name="logo-google"></ion-icon></a>
-                            <a href="https://www.thequint.com/entertainment/bigg-boss-ott-heres-how-you-can-watch-for-free-livestream-online-voot-contestants-karan-johar"><ion-icon name="logo-skype"></ion-icon></a>
-                        </div>
-                      </form>
+        <div class="footer-second">
+          <ul>
+            <li><a href="link/index.html">project work</a></li>
+            <li><a href="mailto:jasmeensingh264@gmail.com">email</a></li>
+            <li><a href="tell:9991719097">contact me</a></li>
+            <li><a href="portfolio">Services</a></li>
             
-    
-        
-                    </div>
-                   
-            </div>
-        
-    </div>
-     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>    
-</body>
+          
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; www.jasmeenportfolio.com| All Rights Reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['I am a Programmer', 'Good in task management.', 'A learner', 'Cooking is also a part of my life'],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>
